@@ -5,7 +5,7 @@ This repository contains my personal portfolio website, built to showcase my aca
 The portfolio highlights projects developed during my Computer Engineering degree, with a focus on software development, computer networks, artificial intelligence and computer graphics.
 
 ## About Me
-Final-year Computer Engineering student with strong foundations in software development, algorithms and computer networks. Hands-on experience through academic projects and a strong interest in applying technical knowledge in real-world environments. Currently seeking an internship or entry-level opportunity, including remote and international contexts.
+Final-year Computer Engineering student with strong foundations in software development, algorithms and computer networks. Hands-on experience through academic projects and a strong interest in applying technical knowledge in real-world environments. Currently seeking an internship or entry-level opportunity.
 
 ## Featured Projects
 - **Computer Networks – Multi-threaded File Transfer System**  
