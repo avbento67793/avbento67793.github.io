@@ -18,9 +18,9 @@ Final-year Computer Engineering student with strong foundations in software deve
   Implementation of the Simulated Annealing optimization algorithm to solve an optimization problem using heuristic search techniques.
 
 ## Technologies
-- Programming: Python, JavaScript, SQL  
-- Concepts: Software Development, Algorithms, Computer Networks, Artificial Intelligence, Computer Graphics  
-- Tools: Git, GitHub, WebGL
+- Programming: Java, Python, JavaScript, SQL  
+- Concepts: Software Development, Object-Oriented Programming, Algorithms and Data Structures, Computer Networks, Artificial Intelligence, Computer Graphics and Interfaces
+- Tools: Git, GitHub
 
 ## Live Website
 The portfolio is available at:  
@@ -31,5 +31,3 @@ The portfolio is available at:
 - LinkedIn : https://www.linkedin.com/in/afonso-bento-50250a284/
 - Email : afonso.v.bento@gmail.com
 - Whatsapp : 934 713 534
-
-
