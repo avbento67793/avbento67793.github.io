@@ -8,14 +8,19 @@ The portfolio highlights projects developed during my Computer Engineering degre
 Final-year Computer Engineering student with strong foundations in software development, algorithms and computer networks. Hands-on experience through academic projects and a strong interest in applying technical knowledge in real-world environments. Currently seeking an internship or entry-level opportunity.
 
 ## Featured Projects
+- **Object-Oriented Programming – Calendar Management System**
+  An object-oriented calendar system developed in Java as part of an academic project.
+  The application supports multiple account and event types, using interfaces and clean architecture to ensure scalability and maintainability.
+  Demonstrates strong foundations in object-oriented design and software engineering best practices.
+
 - **Computer Networks – Multi-threaded File Transfer System**  
   Client-server application implemented in Python using socket programming and multi-threading.
 
-- **Computer Graphics – 3D Hierarchical Modelling**  
-  3D graphics application developed with JavaScript and WebGL, using scene graphs and multiple projection techniques.
-
 - **Artificial Intelligence – Simulated Annealing**  
   Implementation of the Simulated Annealing optimization algorithm to solve an optimization problem using heuristic search techniques.
+
+- **Computer Graphics – 3D Hierarchical Modelling**  
+  3D graphics application developed with JavaScript and WebGL, using scene graphs and multiple projection techniques.
 
 ## Technologies
 - Programming Languages: Java, Python, C, JavaScript, SQL  
