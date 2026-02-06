@@ -18,7 +18,7 @@ Final-year Computer Engineering student with strong foundations in software deve
   Implementation of the Simulated Annealing optimization algorithm to solve an optimization problem using heuristic search techniques.
 
 ## Technologies
-- Programming: Java, Python, JavaScript, SQL  
+- Programming Languages: Java, Python, C, JavaScript, SQL  
 - Concepts: Software Development, Object-Oriented Programming, Algorithms and Data Structures, Computer Networks, Artificial Intelligence, Computer Graphics and Interfaces
 - Tools: Git, GitHub
 
