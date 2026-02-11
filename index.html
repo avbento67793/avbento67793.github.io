@@ -51,7 +51,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 14px;
-      margin-bottom: 24px;
+      margin-bottom: 18px;
     }
 
     .brand{
@@ -214,13 +214,6 @@
       border-color: rgba(124,92,255,.62);
     }
 
-    .two-col{
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 14px;
-      align-items: start;
-    }
-
     .panel{
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -259,7 +252,6 @@
     /* Responsive */
     @media (max-width: 860px){
       .card{ grid-column: span 12; }
-      .two-col{ grid-template-columns: 1fr; }
       .quick-links{ justify-content: flex-start; }
       h1{ font-size: 30px; }
     }
@@ -280,11 +272,12 @@
       </nav>
     </header>
 
+    <!-- NEW: About / Description -->
     <section class="hero">
       <p>
-        Final-year Computer Engineering student with strong foundations in software development, algorithms and computer networks.
-        Hands-on experience through academic projects. Seeking an internship or entry-level opportunity, including remote and
-        international contexts.
+        Final-year <strong>Computer Engineering</strong> student at <strong>NOVA School of Science and Technology (NOVA FCT)</strong>.
+        Strong foundations in software development, algorithms, and computer networks, with hands-on experience through academic projects.
+        Currently looking for an internship or entry-level opportunity, including remote and international contexts.
       </p>
     </section>
 
@@ -306,7 +299,6 @@
           <p class="card-title">Algorithms & Data Structures — Railway Network Management System</p>
           <p class="meta">Java 21 · ADTs · Custom Data Structures · Complexity Analysis · Persistence</p>
           <div class="actions">
-            <!-- Update the repo URL when you create it -->
             <a class="link" href="https://github.com/avbento67793/Railway-Network-Management-System" target="_blank" rel="noopener">View on GitHub →</a>
             <span class="tag">CLI</span>
             <span class="tag">Validation</span>
@@ -344,26 +336,16 @@
           </div>
         </article>
       </section>
-      
-      <h2>Certifications</h2>
-      <section class="two-col">
-        <div class="panel">
-          <ul>
-            <li>
-              <strong>Cambridge English: First (FCE)</strong> — B2 level (CEFR)
-              [ <a href="cambridge_fce.pdf" target="_blank" rel="noopener">View certificate (PDF)</a> ]
-            </li>
-          </ul>
-        </div>
 
-        <div class="panel">
-          <h2 style="margin:0 0 10px; font-size:16px;">Links</h2>
-          <ul>
-            <li><a href="Afonso_Bento_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
-            <li><a href="https://github.com/avbento67793" target="_blank" rel="noopener">GitHub Profile</a></li>
-          </ul>
-        </div>
-      </section>
+      <h2>Certifications</h2>
+      <div class="panel">
+        <ul>
+          <li>
+            <strong>Cambridge English: First (FCE)</strong> — B2 level (CEFR)
+            [ <a href="cambridge_fce.pdf" target="_blank" rel="noopener">View certificate (PDF)</a> ]
+          </li>
+        </ul>
+      </div>
     </main>
 
     <footer>
