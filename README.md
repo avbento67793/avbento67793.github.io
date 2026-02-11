@@ -13,6 +13,11 @@ Final-year Computer Engineering student with strong foundations in software deve
   The application supports multiple account and event types, using interfaces and clean architecture to ensure scalability and maintainability.
   Demonstrates strong foundations in object-oriented design and software engineering best practices.
 
+- **Algorithms & Data Structures – Railway Network Management System**
+  Command-line railway network management system developed in Java 21.
+  Supports dynamic line and schedule management, strict time validation (including overtaking prevention), route optimization, and persistent storage.
+  Focused on custom data structures, ADTs, and algorithmic complexity analysis.
+
 - **Computer Networks – Multi-threaded File Transfer System**  
   Client-server application implemented in Python using socket programming and multi-threading.
 
