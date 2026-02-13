@@ -35,9 +35,3 @@ Final-year Computer Engineering student with strong foundations in software deve
 ## Live Website
 The portfolio is available at:  
 👉 https://avbento67793.github.io
-
-## Contact
-- GitHub : https://github.com/avbento67793
-- LinkedIn : https://www.linkedin.com/in/afonso-bento-50250a284/
-- Email : afonso.v.bento@gmail.com
-- Whatsapp : 934 713 534
