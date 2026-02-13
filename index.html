@@ -4,19 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Afonso Bento | Computer Engineering</title>
-  <meta name="description" content="Afonso Bento — Final-year Computer Engineering student at NOVA FCT. Portfolio with selected academic projects, CV and certifications." />
+  <meta name="description" content="Afonso Bento — Computer Engineering at NOVA FCT. Portfolio with selected academic projects, CV and certifications." />
 
   <style>
     :root{
       --bg: #0b1020;
-      --card: rgba(255,255,255,.06);
-      --card2: rgba(255,255,255,.08);
       --border: rgba(255,255,255,.12);
       --text: rgba(255,255,255,.92);
       --muted: rgba(255,255,255,.72);
       --muted2: rgba(255,255,255,.62);
       --accent: #7c5cff;
-      --accent2: #2dd4bf;
       --shadow: 0 18px 50px rgba(0,0,0,.35);
       --radius: 16px;
     }
@@ -26,7 +23,7 @@
 
     body{
       margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color: var(--text);
       background:
         radial-gradient(900px 500px at 10% 0%, rgba(124,92,255,.25), transparent 55%),
@@ -38,7 +35,6 @@
       color: var(--text);
       text-decoration: none;
     }
-    a:hover{ text-decoration: none; }
 
     .container{
       max-width: 980px;
@@ -64,7 +60,6 @@
       margin: 0;
       font-size: 34px;
       letter-spacing: -0.02em;
-      line-height: 1.1;
     }
 
     .subtitle{
@@ -77,42 +72,31 @@
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
-      justify-content: flex-end;
     }
 
     .btn{
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 10px 12px;
-      border: 1px solid var(--border);
+      padding: 10px 14px;
       border-radius: 999px;
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 24px rgba(0,0,0,.18);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
       font-size: 13px;
-      color: var(--text);
-      transition: transform .15s ease, border-color .15s ease, background .15s ease;
-      white-space: nowrap;
+      transition: 0.2s ease;
     }
+
     .btn:hover{
+      background: rgba(255,255,255,.12);
       transform: translateY(-1px);
-      border-color: rgba(255,255,255,.20);
-      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
-    }
-    .btn.primary{
-      border-color: rgba(124,92,255,.55);
-      background: linear-gradient(180deg, rgba(124,92,255,.35), rgba(124,92,255,.12));
     }
 
     .hero{
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      box-shadow: var(--shadow);
-      padding: 18px 18px;
-      margin-bottom: 22px;
+      padding: 18px;
+      margin-bottom: 24px;
       backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
     }
 
     .hero p{
@@ -123,10 +107,9 @@
     }
 
     h2{
-      margin: 26px 0 12px;
+      margin: 26px 0 14px;
       font-size: 18px;
-      letter-spacing: -0.01em;
-      color: rgba(255,255,255,.88);
+      color: var(--text);
     }
 
     .grid{
@@ -139,36 +122,20 @@
       grid-column: span 6;
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-      box-shadow: 0 18px 46px rgba(0,0,0,.22);
-      padding: 16px 16px 14px;
+      padding: 16px;
       backdrop-filter: blur(10px);
-      position: relative;
-      overflow: hidden;
-      transition: transform .15s ease, border-color .15s ease;
+      box-shadow: var(--shadow);
+      transition: 0.2s ease;
     }
+
     .card:hover{
-      transform: translateY(-2px);
-      border-color: rgba(255,255,255,.18);
+      transform: translateY(-3px);
     }
-
-    .card::before{
-      content:"";
-      position:absolute;
-      inset:-1px;
-      background: radial-gradient(420px 220px at 15% 0%, rgba(124,92,255,.20), transparent 60%),
-                  radial-gradient(420px 220px at 85% 0%, rgba(45,212,191,.16), transparent 55%);
-      opacity: .7;
-      pointer-events:none;
-    }
-
-    .card > *{ position: relative; }
 
     .card-title{
       margin: 0 0 8px 0;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 15px;
-      letter-spacing: -0.01em;
     }
 
     .meta{
@@ -179,105 +146,95 @@
 
     .actions{
       display: flex;
-      gap: 10px;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-top: 8px;
-    }
-
-    .tag{
-      display: inline-flex;
-      align-items: center;
-      padding: 6px 10px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      background: rgba(255,255,255,.05);
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .link{
-      display: inline-flex;
-      align-items: center;
       gap: 8px;
-      padding: 8px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(124,92,255,.45);
-      background: rgba(124,92,255,.14);
-      color: var(--text);
-      font-size: 12.5px;
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      flex-wrap: wrap;
     }
+
+    .link, .tag{
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      transition: 0.2s ease;
+    }
+
     .link:hover{
-      transform: translateY(-1px);
-      background: rgba(124,92,255,.20);
-      border-color: rgba(124,92,255,.62);
+      background: rgba(124,92,255,.2);
     }
 
     .panel{
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-      box-shadow: 0 14px 40px rgba(0,0,0,.18);
       padding: 16px;
       backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
     }
 
     ul{
       margin: 0;
       padding-left: 18px;
       color: var(--muted);
-      line-height: 1.7;
-      font-size: 14px;
     }
-    li{ margin: 8px 0; }
+
+    li{
+      margin: 10px 0;
+    }
+
+    .cert-link{
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 9px;
+      margin-left: 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      font-size: 12px;
+      transition: 0.2s ease;
+    }
+
+    .cert-link:hover{
+      background: rgba(255,255,255,.12);
+      transform: translateY(-1px);
+    }
 
     footer{
-      margin-top: 26px;
+      margin-top: 28px;
       padding-top: 14px;
-      border-top: 1px solid rgba(255,255,255,.10);
-      color: rgba(255,255,255,.55);
+      border-top: 1px solid var(--border);
       font-size: 13px;
+      color: var(--muted2);
       display: flex;
       justify-content: space-between;
-      gap: 10px;
       flex-wrap: wrap;
     }
 
-    .small{
-      color: rgba(255,255,255,.55);
-      font-size: 13px;
-    }
-
-    /* Responsive */
     @media (max-width: 860px){
       .card{ grid-column: span 12; }
-      .quick-links{ justify-content: flex-start; }
-      h1{ font-size: 30px; }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
+
     <header class="topbar">
       <div class="brand">
         <h1>Afonso Bento</h1>
-        <p class="subtitle"><strong>Final-year Computer Engineering student</strong></p>
+        <p class="subtitle"><strong>Computer Engineering — NOVA FCT</strong></p>
       </div>
 
-      <nav class="quick-links" aria-label="Quick links">
-        <a class="btn primary" href="Afonso_Bento_CV.pdf" target="_blank" rel="noopener">📄 CV (PDF)</a>
-        <a class="btn" href="https://github.com/avbento67793" target="_blank" rel="noopener">💻 GitHub</a>
+      <nav class="quick-links">
+        <a class="btn" href="Afonso_Bento_CV.pdf" target="_blank">📄 CV</a>
+        <a class="btn" href="https://github.com/avbento67793" target="_blank">💻 GitHub</a>
       </nav>
     </header>
 
-    <!-- NEW: About / Description -->
     <section class="hero">
       <p>
-        Final-year <strong>Computer Engineering</strong> student at <strong>NOVA School of Science and Technology (NOVA FCT)</strong>.
-        Strong foundations in software development, algorithms, and computer networks, with hands-on experience through academic projects.
-        Currently looking for an internship or entry-level opportunity, including remote and international contexts.
+        Computer Engineering student at <strong>NOVA School of Science and Technology (NOVA FCT)</strong>.
+        Strong foundation in software development, algorithms and computer networks.
+        Passionate about backend systems, structured problem-solving and performance-oriented solutions.
       </p>
     </section>
 
@@ -286,80 +243,72 @@
 
       <section class="grid">
         <article class="card">
-          <p class="card-title">Object-Oriented Programming — Calendar Management System</p>
-          <p class="meta">Java · Object-Oriented Programming · Interfaces · Design Patterns</p>
+          <p class="card-title">Calendar Management System</p>
+          <p class="meta">Java · OOP · Interfaces · Design Patterns</p>
           <div class="actions">
-            <a class="link" href="https://github.com/avbento67793/CalendarSystem" target="_blank" rel="noopener">View on GitHub →</a>
+            <a class="link" href="https://github.com/avbento67793/CalendarSystem" target="_blank">View</a>
             <span class="tag">OOP</span>
-            <span class="tag">Architecture</span>
           </div>
         </article>
 
         <article class="card">
-          <p class="card-title">Algorithms & Data Structures — Railway Network Management System</p>
-          <p class="meta">Java 21 · ADTs · Custom Data Structures · Complexity Analysis · Persistence</p>
+          <p class="card-title">Railway Network Management System</p>
+          <p class="meta">Java 21 · ADTs · Complexity Analysis</p>
           <div class="actions">
-            <a class="link" href="https://github.com/avbento67793/Railway-Network-Management-System" target="_blank" rel="noopener">View on GitHub →</a>
+            <a class="link" href="https://github.com/avbento67793/Railway-Network-Management-System" target="_blank">View</a>
             <span class="tag">CLI</span>
-            <span class="tag">Validation</span>
-            <span class="tag">Optimization</span>
           </div>
         </article>
 
         <article class="card">
-          <p class="card-title">Computer Networks — Multi-threaded File Transfer System</p>
-          <p class="meta">Python · Sockets · Multi-threading</p>
+          <p class="card-title">Multi-threaded File Transfer</p>
+          <p class="meta">Python · Sockets · TCP</p>
           <div class="actions">
-            <a class="link" href="https://github.com/avbento67793/RedesDeComputadores" target="_blank" rel="noopener">View on GitHub →</a>
-            <span class="tag">Client–Server</span>
-            <span class="tag">TCP</span>
+            <a class="link" href="https://github.com/avbento67793/RedesDeComputadores" target="_blank">View</a>
           </div>
         </article>
 
         <article class="card">
-          <p class="card-title">Computer Graphics — 3D Hierarchical Modelling</p>
-          <p class="meta">JavaScript · WebGL · Shaders</p>
+          <p class="card-title">3D Hierarchical Modelling</p>
+          <p class="meta">JavaScript · WebGL</p>
           <div class="actions">
-            <a class="link" href="https://github.com/avbento67793/CGI-Projeto2" target="_blank" rel="noopener">View on GitHub →</a>
-            <span class="tag">WebGL</span>
-            <span class="tag">Scene Graph</span>
+            <a class="link" href="https://github.com/avbento67793/CGI-Projeto2" target="_blank">View</a>
           </div>
         </article>
 
         <article class="card">
-          <p class="card-title">Artificial Intelligence — Simulated Annealing</p>
-          <p class="meta">Optimization · Heuristic Algorithms</p>
+          <p class="card-title">Simulated Annealing</p>
+          <p class="meta">Optimization · Heuristics</p>
           <div class="actions">
-            <a class="link" href="https://github.com/avbento67793/IA-Simulated_Annealing" target="_blank" rel="noopener">View on GitHub →</a>
-            <span class="tag">Heuristics</span>
-            <span class="tag">Search</span>
+            <a class="link" href="https://github.com/avbento67793/IA-Simulated_Annealing" target="_blank">View</a>
           </div>
         </article>
       </section>
 
-    <h2>Certifications</h2>
-    <div class="panel">
-      <ul>
-        <li>
-          <strong>Cambridge English: First (FCE)</strong> — B2 level (CEFR)
-          [ <a href="cambridge_fce.pdf" target="_blank" rel="noopener">View certificate</a> ]
-        </li>
-        <li>
-          <strong>SQL Certification (LinkedIn)</strong>
-          [ <a href="sql_LinkedIn_certification.pdf" target="_blank" rel="noopener">View certificate</a> ]
-        </li>
-        <li>
-          <strong>Rust Certification (LinkedIn)</strong>
-          [ <a href="rust_LinkedIn_certification.pdf" target="_blank" rel="noopener">View certificate</a> ]
-        </li>
-      </ul>
-    </div>
+      <h2>Certifications</h2>
+      <div class="panel">
+        <ul>
+          <li>
+            <strong>Cambridge English: First (FCE)</strong>
+            <a class="cert-link" href="cambridge_fce.pdf" target="_blank">View PDF</a>
+          </li>
+          <li>
+            <strong>SQL Certification (LinkedIn)</strong>
+            <a class="cert-link" href="sql_LinkedIn_certification.pdf" target="_blank">View PDF</a>
+          </li>
+          <li>
+            <strong>Rust Certification (LinkedIn)</strong>
+            <a class="cert-link" href="rust_LinkedIn_certification.pdf" target="_blank">View PDF</a>
+          </li>
+        </ul>
+      </div>
     </main>
 
     <footer>
-      <span>© <script>document.write(new Date().getFullYear());</script> Afonso Bento · Built with GitHub Pages</span>
-      <span class="small">Last updated: <script>document.write(new Date().toLocaleDateString());</script></span>
+      <span>© <script>document.write(new Date().getFullYear());</script> Afonso Bento</span>
+      <span>Built with GitHub Pages</span>
     </footer>
+
   </div>
 </body>
 </html>
